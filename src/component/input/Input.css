@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.input,
+.btn {
+  height: 40px;
+}
+.btn-add-task {
+  background-color: #8e44ad;
+  border: none;
+}
+.input {
+  background-color: #bdc3c7;
+  border: 2px solid #778ca3;
+}
+.input:focus {
+  border: 2px solid #4b6584;
+}
+.input-div {
+  padding: 0;
+}
+.btn-div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: end;
+  padding: 0;
+}

@@ -1,0 +1,12 @@
+.item-row {
+  background-color: #434243;
+  margin-bottom: 1rem;
+  color: white;
+  border-radius: 5px;
+}
+.item-row p {
+  font-size: 1.3rem;
+  margin: 0;
+  line-height: 1;
+  padding: 1rem 0;
+}

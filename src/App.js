@@ -1,25 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import Edit from './component/edit/Edit'
+import Input from './component/input/Input'
+import Item from './component/item/Item'
 
 function App() {
+  let [items,setItems]=useState(["mango","orange","bannana"])
+  let [editEnable,setEditEnable]=useState(false)
+  let [editIndex,setEditEndex]=useState(null)
+
+  function handleChildData(childData){
+    setItems((previousData)=>[...previousData,childData])
+  }
+
+  function handleDeleteIndex(id){
+    let index=id-1
+    let newItemArray=JSON.parse(JSON.stringify(items))
+    newItemArray.splice(index,1)
+    setItems(newItemArray)
+  }
+
+  function handleEditEnable(id,condition){
+    let index=id-1
+    setEditEndex(index)
+    setEditEnable(condition)
+  }
+
+  function handleUpdatedArray(updatedCondition,updateArraydata){
+    setItems(updateArraydata)
+    setEditEnable(updatedCondition)
+  }
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <div className='container'>
+        <div className='row'>
+          <div className='col-md-6 offset-3'>
+              {editEnable?<Edit editIndex={editIndex} editEnable={editEnable} itemsArray={items} collectChildDataNewArrayFromEdit={handleUpdatedArray}/>:<Input collectChildDataFromInput={handleChildData}/>}
+              
+              {items.map((item,index)=><Item key={index} id={index+1} items={item} collectChildDataFromItem={handleDeleteIndex} collectChildDataFromItemEdit={handleEditEnable}/>
+              )} 
+          </div>
+        </div>
+      </div>
+    </>
+  )
 }
 
-export default App;
+export default App
