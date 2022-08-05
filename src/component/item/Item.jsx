@@ -41,7 +41,7 @@ function Item(props) {
                 <p><FaCheckCircle style={{color:'red'}} className="icon" onClick={handleChecked}/></p>
               </div>
             </>):(<>
-                    <div className='col-1'>
+                    <div className='col-1 margin_left'>
                         <p><FaCheckCircle className="icon" onClick={()=>handleChecked(props.id)}/></p>
                     </div>
                     <div className='col-1'>
