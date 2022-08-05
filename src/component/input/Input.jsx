@@ -30,7 +30,7 @@ function Input(props) {
           </div>
           <div className='col-3 btn-div'>
                 <Button variant="primary" type="submit" className='btn btn-add-task'>
-                Add task
+                Add
                 </Button>
           </div>
         </div>
