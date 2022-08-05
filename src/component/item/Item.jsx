@@ -30,7 +30,7 @@ function Item(props) {
             <div className='col-1'>
                 <p className='id'>{props.id}</p>
             </div>
-            <div className='col-8'>
+            <div className='col-7'>
                 <p>{props.items}</p>
             </div>
             {checked?(<>
