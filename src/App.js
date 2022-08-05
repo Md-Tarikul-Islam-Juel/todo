@@ -5,7 +5,7 @@ import Input from './component/input/Input'
 import Item from './component/item/Item'
 
 function App() {
-  let [items,setItems]=useState(["mango","orange","bannana"])
+  let [items,setItems]=useState([])
   let [editEnable,setEditEnable]=useState(false)
   let [editIndex,setEditEndex]=useState(null)
 
