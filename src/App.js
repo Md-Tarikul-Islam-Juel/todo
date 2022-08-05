@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './App.css'
 import Edit from './component/edit/Edit'
 import Input from './component/input/Input'
 import Item from './component/item/Item'
@@ -33,7 +34,7 @@ function App() {
   return (
     <>
       <div className='container'>
-        <div className='row'>
+        <div className='row app-row'>
           <div className='col-10 offset-1'>
               {editEnable?<Edit editIndex={editIndex} editEnable={editEnable} itemsArray={items} collectChildDataNewArrayFromEdit={handleUpdatedArray}/>:<Input collectChildDataFromInput={handleChildData}/>}
               
