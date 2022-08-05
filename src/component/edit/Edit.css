@@ -3,9 +3,13 @@
   padding: 0;
 }
 
-.input,
+.input-edit,
 .btn {
-  height: 2rem;
+  height: 3rem;
+}
+.input-edit {
+  background-color: #bdc3c7;
+  border: 0.15rem solid #778ca3;
 }
 .input-div {
   padding: 0;
@@ -24,3 +28,35 @@
   background-color: #eb2f06;
   border: none;
 }
+/*=================================================================*/
+/*----------------------Media query start--------------------------*/
+/*=================================================================*/
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+  ##Ipad Air width 820px, Ipad mini 768px width
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+  ## oneplus6T width 412px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+  .input-edit {
+    width: 11rem;
+  }
+}
+/*=================================================================*/
+/*----------------------Media query End----------------------------*/
+/*=================================================================*/

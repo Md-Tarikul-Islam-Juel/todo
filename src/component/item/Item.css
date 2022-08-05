@@ -46,10 +46,11 @@
 */
 @media (min-width: 320px) and (max-width: 480px) {
   .margin_left {
-    margin-left: -1.5rem;
+    margin-left: -2.5rem;
   }
   .icon {
-    padding: 0px 5px;
+    padding: 0px 13px;
+    font-size: 2.5rem;
   }
 }
 /*=================================================================*/
