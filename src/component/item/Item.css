@@ -60,7 +60,7 @@
 */
 @media (min-width: 320px) and (max-width: 480px) {
   .margin_left {
-    margin-left: -1rem;
+    /* margin-left: -1rem; */
   }
   .icon {
     font-size: 1rem;
