@@ -11,8 +11,18 @@
   padding: 1rem 0;
 }
 .overFlowControl {
-  overflow: hidden;
+  overflow-x: scroll;
   white-space: nowrap;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.overFlowControl::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.overFlowControl {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 .id {
   color: #ff793f;
