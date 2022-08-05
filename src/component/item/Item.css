@@ -10,8 +10,12 @@
   line-height: 1;
   padding: 1rem 0;
 }
+.id {
+  color: #ff793f;
+}
 .icon {
   color: #33d9b2;
+  font-size: 1.8rem;
 }
 .icon:hover {
   color: #ff793f;

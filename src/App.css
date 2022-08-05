@@ -31,9 +31,6 @@
   ## oneplus6T width 412px
 */
 @media (min-width: 320px) and (max-width: 480px) {
-  .appWidthFixinMQ {
-    /* width: 150px; */
-  }
 }
 /*=================================================================*/
 /*----------------------Media query End----------------------------*/

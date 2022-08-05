@@ -28,7 +28,7 @@ function Item(props) {
     <>
     <div className='row item-row'>
             <div className='col-1'>
-                <p>{props.id}</p>
+                <p className='id'>{props.id}</p>
             </div>
             <div className='col-8'>
                 <p>{props.items}</p>
