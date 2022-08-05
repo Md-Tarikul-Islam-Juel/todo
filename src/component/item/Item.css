@@ -10,6 +10,10 @@
   line-height: 1;
   padding: 1rem 0;
 }
+.overFlowControl {
+  overflow: hidden;
+  white-space: nowrap;
+}
 .id {
   color: #ff793f;
 }
