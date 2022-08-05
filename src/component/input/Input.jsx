@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import { FaPlus } from 'react-icons/fa';
 
 import './Input.css';
 
@@ -30,7 +31,7 @@ function Input(props) {
           </div>
           <div className='col-2 btn-div'>
                 <Button variant="primary" type="submit" className='btn btn-add-task'>
-                Add
+                <FaPlus/>
                 </Button>
           </div>
         </div>
