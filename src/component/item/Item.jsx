@@ -34,7 +34,7 @@ function Item(props) {
                 <p>{props.items}</p>
             </div>
             {checked?(<>
-              <div className='col-1'>
+              <div className='col-1 margin_left'>
                 <p> </p>
               </div>
               <div className='col-1'>
