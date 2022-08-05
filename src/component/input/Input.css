@@ -55,9 +55,9 @@
   ## oneplus6T width 412px
 */
 @media (min-width: 320px) and (max-width: 480px) {
-  .margin_left {
+  /* .margin_left {
     margin-left: 0.5rem;
-  }
+  } */
   .input {
     width: 14rem;
   }
