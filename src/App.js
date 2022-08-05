@@ -34,7 +34,7 @@ function App() {
     <>
       <div className='container'>
         <div className='row'>
-          <div className='col-md-6 offset-3'>
+          <div className='col-xs-6 offset-3'>
               {editEnable?<Edit editIndex={editIndex} editEnable={editEnable} itemsArray={items} collectChildDataNewArrayFromEdit={handleUpdatedArray}/>:<Input collectChildDataFromInput={handleChildData}/>}
               
               {items.map((item,index)=><Item key={index} id={index+1} items={item} collectChildDataFromItem={handleDeleteIndex} collectChildDataFromItemEdit={handleEditEnable}/>

@@ -10,3 +10,9 @@
   line-height: 1;
   padding: 1rem 0;
 }
+.icon {
+  color: #33d9b2;
+}
+.icon:hover {
+  color: #ff793f;
+}
