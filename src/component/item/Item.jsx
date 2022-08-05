@@ -30,26 +30,26 @@ function Item(props) {
             <div className='col-1'>
                 <p className='id'>{props.id}</p>
             </div>
-            <div className='col-7'>
+            <div className='col-9'>
                 <p>{props.items}</p>
             </div>
             {checked?(<>
-              <div className='col margin_left'>
+              <div className='col-1 margin_left'>
                 <p> </p>
               </div>
-              <div className='col'>
+              <div className='col-1'>
                 <p><FaCheckCircle style={{color:'red'}} className="icon" onClick={handleChecked}/></p>
               </div>
             </>):(<>
-                    <div className='col margin_left'>
+                    <div className='col-1 margin_left'>
                         <p><FaCheckCircle className="icon" onClick={()=>handleChecked(props.id)}/></p>
                     </div>
-                    <div className='col'>
+                    <div className='col-1'>
                         <p><FaEdit onClick={()=>editInput(props.id)}className="icon"/></p>
                     </div>
                     </>)
                     }
-                    <div className='col'>
+                    <div className='col-1'>
                         <p><MdDelete onClick={()=>{handleDelete(props.id);handleCheckedfalse()}} className="icon"/></p>
                     </div>
             </div>  
