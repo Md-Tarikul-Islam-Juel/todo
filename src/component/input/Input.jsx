@@ -23,12 +23,12 @@ function Input(props) {
     <>
       <Form className='form' onSubmit={handleSubmit}>
         <div className='row'>
-          <div className='col-xs-9 input-div'>
+          <div className='col-9 input-div'>
               <Form.Group className="mb-3" controlId="formBasicEmail"> 
                   <Form.Control type="text" placeholder="Type your task"  className='input' value={inputData} onChange={handleInputData}/>
               </Form.Group>
           </div>
-          <div className='col-xs-3 btn-div'>
+          <div className='col-3 btn-div'>
                 <Button variant="primary" type="submit" className='btn btn-add-task'>
                 Add task
                 </Button>

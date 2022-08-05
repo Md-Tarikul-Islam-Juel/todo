@@ -13,10 +13,10 @@
 }
 .input {
   background-color: #bdc3c7;
-  border: 2px solid #778ca3;
+  border: 0.15rem solid #778ca3;
 }
 .input:focus {
-  border: 2px solid #4b6584;
+  border: 0.15rem solid #4b6584;
 }
 .input-div {
   padding: 0;

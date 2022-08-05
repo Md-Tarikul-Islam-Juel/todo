@@ -40,17 +40,17 @@ function Edit(props) {
     <>
         <Form className='form' onSubmit={handleEditSubmit}>
             <div className='row'>
-                <div className='col-xs-8 input-div'>
+                <div className='col-8 input-div'>
                     <Form.Group className="mb-3" controlId="formBasicEmail"> 
                         <Form.Control type="text" placeholder="Edit your task"  className='input' value={newItemText} onChange={handleInputEditData}/>
                     </Form.Group>
                 </div>
-                <div className='col-xs-2 btn-div'>
+                <div className='col-2 btn-div'>
                     <Button variant="primary" type="submit" className='btn btn-update' onClick={handleUpdate}>
                         Update
                     </Button>
                 </div>
-                <div className='col-xs-2 btn-div'>
+                <div className='col-2 btn-div'>
                     <Button variant="primary" type="submit" className='btn btn-cancle' onClick={handleCancle}>
                         Cancle
                     </Button>
