@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import { MdCancel } from 'react-icons/md';
+import { TiTick } from 'react-icons/ti';
+
 import './Edit.css';
 
 
@@ -40,19 +43,19 @@ function Edit(props) {
     <>
         <Form className='form' onSubmit={handleEditSubmit}>
             <div className='row'>
-                <div className='col-8 input-div'>
+                <div className='col-9 input-div'>
                     <Form.Group className="mb-3" controlId="formBasicEmail"> 
                         <Form.Control type="text" placeholder="Edit your task"  className='input' value={newItemText} onChange={handleInputEditData}/>
                     </Form.Group>
                 </div>
-                <div className='col-2 btn-div'>
+                <div className='col btn-div'>
                     <Button variant="primary" type="submit" className='btn btn-update' onClick={handleUpdate}>
-                        Update
+                        <TiTick/>
                     </Button>
                 </div>
-                <div className='col-2 btn-div'>
+                <div className='col btn-div'>
                     <Button variant="primary" type="submit" className='btn btn-cancle' onClick={handleCancle}>
-                        Cancle
+                        <MdCancel/>
                     </Button>
                 </div>
             </div>
