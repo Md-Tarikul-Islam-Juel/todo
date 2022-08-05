@@ -1,7 +1,8 @@
 .app-row {
-  margin-top: 50px;
+  margin: 50px 10px;
   background-color: #ff793f;
   padding: 30px 0;
+
   border-radius: 10px;
 }
 
