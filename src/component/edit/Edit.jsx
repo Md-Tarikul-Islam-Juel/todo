@@ -48,12 +48,12 @@ function Edit(props) {
                         <Form.Control type="text" placeholder="Edit your task"  className='input-edit' value={newItemText} onChange={handleInputEditData}/>
                     </Form.Group>
                 </div>
-                <div className='col btn-div'>
+                <div className='col-2 btn-div'>
                     <Button variant="primary" type="submit" className='btn btn-update' onClick={handleUpdate}>
                         <TiTick/>
                     </Button>
                 </div>
-                <div className='col btn-div'>
+                <div className='col-2 btn-div'>
                     <Button variant="primary" type="submit" className='btn btn-cancle' onClick={handleCancle}>
                         <MdCancel/>
                     </Button>
