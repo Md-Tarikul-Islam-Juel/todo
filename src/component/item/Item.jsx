@@ -20,8 +20,9 @@ function Item(props) {
         setChecked(!checked)
         props.collectChildDataFromItemEdit(id,false)
     }
-    function handleCheckedfalse(){
+    function handleCheckedfalse(id){
       setChecked(false)
+      props.collectChildDataFromItemEdit(id,false)
     }
         
   return (
@@ -50,7 +51,7 @@ function Item(props) {
                     </>)
                     }
                     <div className='col-1'>
-                        <p><MdDelete onClick={()=>{handleDelete(props.id);handleCheckedfalse()}} className="icon"/></p>
+                        <p><MdDelete onClick={()=>{handleDelete(props.id);handleCheckedfalse(props.id)}} className="icon"/></p>
                     </div>
             </div>  
     </>
