@@ -7,6 +7,7 @@ import './Input.css';
 
 function Input(props) {
   let [inputData,setInputData]=useState('')
+ 
 
   function handleSubmit(e){
     e.preventDefault()
